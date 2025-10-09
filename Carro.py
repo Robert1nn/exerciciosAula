@@ -9,7 +9,6 @@ class Carro:
     # Getter e Setter - marca
     def get_marca(self):
         return self.__marca
-
     def set_marca(self, nova_marca):
         self.__marca = nova_marca
     
@@ -73,6 +72,6 @@ print("Preço:", carro1.get_preco())
 
 # Testando validações
 print("\nTestando valores inválidos:")
-carro1.set_ano(1500)   # inválido
-carro1.set_preco(-500) # inválido
+carro1.set_ano(2000)   # inválido
+carro1.set_preco(1000) # inválido
 
