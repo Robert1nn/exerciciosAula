@@ -1,17 +1,24 @@
-def estoque(self, produto, quantidade):
-    if produto in self.estoque:
-        self.estoque[produto] += quantidade
-    else:
-        self.estoque[produto] = quantidade
-    print(f"Estoque atualizado: {produto} - {self.estoque[produto]} unidades")
-def vender(self, produto, quantidade):
-    if produto in self.estoque and self.estoque[produto] >= quantidade:
-        self.estoque[produto] -= quantidade
-        print(f"Venda realizada: {produto} - {quantidade} unidades")
-    else:
-        print(f"Venda não realizada: estoque insuficiente para {produto}")# Classe para gerenciar o estoque de uma loja
-def exibirQuantidade(self, produto):
-    if produto in self.estoque:
-        print(f"Quantidade em estoque de {produto}: {self.estoque[produto]} unidades")
-    else:
-        print(f"{produto} não está no estoque")
+# Vetor inicial de estoque
+estoque = [20, 15, 10, 30, 5]
+
+# Função para vender produtos
+def vender(produto, quantidade):
+    estoque[produto - 1] = estoque[produto - 1] - quantidade
+
+# Função para adicionar produtos
+def adicionar(produto, quantidade):
+    estoque[produto - 1] = estoque[produto - 1] + quantidade
+
+# Função para exibir o estoque
+def exibir():
+    print("\nEstoque atual:")
+    for i in range(5):  # 5 produtos
+        print("Produto", i + 1, "→", estoque[i], "unidades")
+
+# --- Operações solicitadas ---
+vender(1, 3)   # vendeu 3 do produto 1
+vender(4, 2)   # vendeu 2 do produto 4
+adicionar(5, 10)  # adicionou 10 ao produto 5
+
+# --- Mostrar o resultado ---
+exibir()
