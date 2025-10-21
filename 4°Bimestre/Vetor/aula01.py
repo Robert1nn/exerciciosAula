@@ -18,6 +18,7 @@ def mostrar_estoque():
 # Vende 3 unidades do produto 1
 vender(0, 3)
 
+
 # Vende 2 unidades do produto 4
 vender(3, 2)
 
