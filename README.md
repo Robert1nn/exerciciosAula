@@ -1,1 +1,1 @@
-# aula02
+# Exercicios feitos em sala de aula
