@@ -5,8 +5,9 @@ estoque = [20, 15, 10, 30, 5]
 estoque[0] = estoque[0] - 3    
 estoque[3] = estoque[3] - 2    
 
+
 #ADICIONA
-estoque[4] = estoque[4] + 10  
+estoque[4] = estoque[4] + 7  
 
 
 print("Estoque atualizado:")

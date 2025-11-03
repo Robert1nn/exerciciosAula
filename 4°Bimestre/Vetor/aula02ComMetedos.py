@@ -2,7 +2,7 @@
 notas = []
 
 # Loop para ler 5 notas
-for i in range(5):
+for i in range(10):
     nota = float(input(f"Digite a nota {i + 1}: "))
     notas.append(nota) # Adiciona a nota ao final da lista
 

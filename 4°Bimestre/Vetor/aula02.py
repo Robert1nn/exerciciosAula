@@ -6,6 +6,7 @@ for i in range(6):
     nota = float(input(f"Digite a nota {i + 1}: "))
     notas[i] = nota  # insere manualmente na posição
 
+
 soma = 0
 for i in range(6):
     soma = soma + notas[i]
